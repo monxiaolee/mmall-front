@@ -10,7 +10,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+// @import url(../static/themes/default/index.scss);
 #app {
 
 }
