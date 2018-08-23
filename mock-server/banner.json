@@ -1,0 +1,20 @@
+{
+    "error":0,
+    "data":[
+        {
+            "id": "1",
+            "url": "/",
+            "img": "http://47.52.36.53/z/stock-photo-526175743.jpg"
+        },
+        {
+            "id": "2",
+            "url": "/",
+            "img": "http://47.52.36.53/z/stock-photo-526175743.jpg"
+        },
+        {
+            "id": "3",
+            "url": "/",
+            "img": "http://47.52.36.53/z/stock-photo-526175743.jpg"
+        }
+    ]
+}

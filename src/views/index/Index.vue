@@ -3,59 +3,18 @@
     <Nav></Nav>
     <Header></Header>
     <div class="w">
-      <ul class="keywords-list">
-          <li class="keywords-item">
-              <a class="link" target="_blank" :href="'/list'">手机</a>
-              <a class="link" target="_blank" href="./list.html?keyword=数码">数码</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=电脑">电脑</a>
-              <a class="link" target="_blank" href="./list.html?keyword=办公配件">办公配件</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=电视">电视</a>
-              <a class="link" target="_blank" href="./list.html?keyword=空调">空调</a>
-              <a class="link" target="_blank" href="./list.html?keyword=冰箱">冰箱</a>
-              <a class="link" target="_blank" href="./list.html?keyword=洗衣机">洗衣机</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=厨卫家电">厨卫家电</a>
-              <a class="link" target="_blank" href="./list.html?keyword=小家电">小家电</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=家具">家具</a>
-              <a class="link" target="_blank" href="./list.html?keyword=家具">家具</a>
-              <a class="link" target="_blank" href="./list.html?keyword=家装">家装</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=厨卫家电">厨卫家电</a>
-              <a class="link" target="_blank" href="./list.html?keyword=小家电">小家电</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=个护化妆">个护化妆</a>
-              <a class="link" target="_blank" href="./list.html?keyword=清洁用品">清洁用品</a>
-              <a class="link" target="_blank" href="./list.html?keyword=纸品">纸品</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=母婴用品">母婴用品</a>
-              <a class="link" target="_blank" href="./list.html?keyword=儿童玩具">儿童玩具</a>
-              <a class="link" target="_blank" href="./list.html?keyword=童装童鞋">童装童鞋</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=鞋靴">鞋靴</a>
-              <a class="link" target="_blank" href="./list.html?keyword=箱包">箱包</a>
-              <a class="link" target="_blank" href="./list.html?keyword=钟表">钟表</a>
-              <a class="link" target="_blank" href="./list.html?keyword=珠宝">珠宝</a>
-          </li>
-          <li class="keywords-item">
-              <a class="link" target="_blank" href="./list.html?keyword=图书">图书</a>
-              <a class="link" target="_blank" href="./list.html?keyword=音像">音像</a>
-              <a class="link" target="_blank" href="./list.html?keyword=电子书">电子书</a>
-          </li>
-      </ul>
-      <div class="banner-con">
-          <div class="loading"></div>
-      </div>
+        <ul class="keywords-list">
+
+          <!-- keywords-item 是一行 -->
+
+            <li class="keywords-item" v-for="(item, index) in allMenuLabel" :key="index">
+                <router-link :to="'/list/' + item.id">
+                    <a class="link" target="_blank">{{item.name}}</a>
+                </router-link>
+            </li>
+
+        </ul>
+        <banner></banner>
     </div>
 
 
@@ -247,20 +206,47 @@
 import Nav from '@/views/layout/Nav'
 import Header from '@/views/layout/Header'
 import Footer from '@/views/layout/Footer'
+import Banner from '@/views/index/banner'
 
 export default {
   name: 'Index',
   components: {
     Nav,
     Header,
-    Footer
+    Footer,
+    Banner
   },
   data() {
       return {
-
+        userInfo: {},
+        allMenuLabel: []
       }
   },
-  mounted() {
+  created() {
+      this.getUserInfo()
+      this.getAllMenu()
+  },
+  methods: {
+        getUserInfo() {
+            this.axios.get('/user/userinfo').then(({data}) => {
+                if(data.error === 0) {
+                    this.userInfo = data.data
+                } else {
+                    this.userInfo = {}
+                }
+            })
+        },
+        getAllMenu() {
+            this.axios.get('/api/getAllMenu').then(({data}) => {
+                if(data.error === 0) {
+                    this.allMenuLabel = data.data
+                    console.log(this.allMenuLabel)
+                } else {
+                    console.log('后台返回菜单为空。。。')
+                    this.allMenuLabel = []
+                }
+            })
+        }
   }
   
 }
@@ -293,44 +279,6 @@ export default {
     color: #c60023;
 }
 
-/* banner-con */
-.banner-con{
-    width: 830px;
-    float: left;
-    height: 370px;
-    background: #eee;
-}
-.banner-con .loading{
-    margin-top: 150px;
-}
-.banner-con .banner-img{
-    width: 100%;
-    height: 370px;
-}
-/* banner的前一张和后一张按钮 */
-.banner-con .banner-arrow{
-    position: absolute; 
-    top:160px;
-    width: 30px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 30px;
-    color: #fff;
-    background: #ccc;
-    background: rgba(0,0,0,.2);
-    cursor: pointer;
-}
-.banner-con .banner-arrow:hover{
-    background: #aaa;
-    background: rgba(0,0,0,.5);
-}
-.banner-con .banner-arrow.prev{
-    left: 0;
-}
-.banner-con .banner-arrow.next{
-    right: 0;
-}
 /* floor */
 .floor-wrap .floor-title{
     height: 50px;
