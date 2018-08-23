@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Index from '@/views/index/Index'
+import List from '@/views/list/List'
 
 Vue.use(Router)
 
@@ -11,6 +12,11 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '/list',
+      name: 'List',
+      component: List
     }
   ]
 })
