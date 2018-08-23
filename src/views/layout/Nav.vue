@@ -3,8 +3,12 @@
     <div class="w">
         <div class="user-info">
             <span class="user not-login">
-                <span class="link js-login">登录</span>
-                <span class="link js-register">注册</span>
+                <span class="link js-login">
+                    <router-link :to="'/login'">登录</router-link>
+                </span>
+                <span class="link js-register">
+                    <router-link :to="'/register'">注册</router-link>
+                </span>
             </span>
             <span class="user login">
                 <span class="link-text">

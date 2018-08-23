@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-  name: 'Header',
+  name: 'Footer',
   data() {
       return {
 
