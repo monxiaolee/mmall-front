@@ -65,7 +65,7 @@ export default {
 .sort-con{
     overflow: auto;
 }
-.sort-con .sort-item{
+.sort-con .sort-item {
     float: left;
     display: inline-block;
     position: relative;

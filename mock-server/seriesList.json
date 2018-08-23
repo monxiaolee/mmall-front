@@ -1,0 +1,215 @@
+{
+    "error":0,
+    "data":[
+        {
+            "title": "窗帘",
+            "list": [
+                {
+                    "id": "1",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "窗帘样品1",
+                    "price": "123"
+                },
+                {
+                    "id": "2",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "窗帘样品2",
+                    "price": "123"
+                },
+                {
+                    "id": "3",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "窗帘样品3",
+                    "price": "123"
+                },
+                {
+                    "id": "4",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "窗帘样品4",
+                    "price": "123"
+                },
+                {
+                    "id": "5",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "窗帘样品5",
+                    "price": "123"
+                }
+            ]
+        },
+        {
+            "title": "床单",
+            "list": [
+                {
+                    "id": "1",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "床单样品1",
+                    "price": "123"
+                },
+                {
+                    "id": "2",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "床单样品2",
+                    "price": "123"
+                },
+                {
+                    "id": "3",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "床单样品3",
+                    "price": "123"
+                },
+                {
+                    "id": "4",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "床单样品4",
+                    "price": "123"
+                },
+                {
+                    "id": "5",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "床单样品5",
+                    "price": "123"
+                }
+            ]
+        },
+        {
+            "title": "抱枕",
+            "list": [
+                {
+                    "id": "1",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "抱枕样品1",
+                    "price": "123"
+                },
+                {
+                    "id": "2",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "抱枕样品2",
+                    "price": "123"
+                },
+                {
+                    "id": "3",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "抱枕样品3",
+                    "price": "123"
+                },
+                {
+                    "id": "4",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "抱枕样品4",
+                    "price": "123"
+                },
+                {
+                    "id": "5",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "抱枕样品5",
+                    "price": "123"
+                }
+            ]
+        },
+        {
+            "title": "沙发套",
+            "list": [
+                {
+                    "id": "1",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "沙发套样品1",
+                    "price": "123"
+                },
+                {
+                    "id": "2",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "沙发套样品2",
+                    "price": "123"
+                },
+                {
+                    "id": "3",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "沙发套样品3",
+                    "price": "123"
+                },
+                {
+                    "id": "4",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "沙发套样品4",
+                    "price": "123"
+                },
+                {
+                    "id": "5",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "沙发套样品5",
+                    "price": "123"
+                }
+            ]
+        },
+        {
+            "title": "绿植",
+            "list": [
+                {
+                    "id": "1",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "绿植样品1",
+                    "price": "123"
+                },
+                {
+                    "id": "2",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "绿植样品2",
+                    "price": "123"
+                },
+                {
+                    "id": "3",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "绿植样品3",
+                    "price": "123"
+                },
+                {
+                    "id": "4",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "绿植样品4",
+                    "price": "123"
+                },
+                {
+                    "id": "5",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "绿植样品5",
+                    "price": "123"
+                }
+            ]
+        },
+        {
+            "title": "手工艺品",
+            "list": [
+                {
+                    "id": "1",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "手工艺品样品1",
+                    "price": "123"
+                },
+                {
+                    "id": "2",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "手工艺品样品2",
+                    "price": "123"
+                },
+                {
+                    "id": "3",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "手工艺品样品3",
+                    "price": "123"
+                },
+                {
+                    "id": "4",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "手工艺品样品4",
+                    "price": "123"
+                },
+                {
+                    "id": "5",
+                    "img": "https://img.zcool.cn/community/031d5f95552e8e10000015f306d69e8.jpg@260w_195h_1c_1e_1o_100sh.jpg",
+                    "title": "手工艺品样品5",
+                    "price": "123"
+                }
+            ]
+        }
+    ]
+}

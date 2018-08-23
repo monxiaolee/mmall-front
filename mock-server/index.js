@@ -22,4 +22,10 @@ module.exports = function(app){
         const json = util.getJsonFile('./banner.json')
         res.json(Mock.mock(json))
     })
+
+    // 获取首页商品列表
+    app.get('/queryCategorygoods', function(req, res) {
+        const json = util.getJsonFile('./seriesList.json')
+        res.json(Mock.mock(json))
+    })
 }

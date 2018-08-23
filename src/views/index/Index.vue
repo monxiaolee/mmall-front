@@ -18,7 +18,11 @@
 
 
     <div class="w">
-
+        
+        <seriesList></seriesList>
+        
+        <!-- 原有静态内容注释 -->
+        <!-- 
         <div class="floor-wrap">
             <h1 class="floor-title">F1 窗帘</h1>
             <ul class="floor-list">
@@ -197,7 +201,8 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div> 
+        -->
 
     </div>
 
@@ -212,6 +217,7 @@ import Nav from '@/views/layout/Nav'
 import Header from '@/views/layout/Header'
 import Footer from '@/views/layout/Footer'
 import Banner from '@/views/index/banner'
+import seriesList from '@/views/index/seriesList'
 
 export default {
   name: 'Index',
@@ -219,7 +225,8 @@ export default {
     Nav,
     Header,
     Footer,
-    Banner
+    Banner,
+    seriesList
   },
   data() {
       return {
@@ -282,64 +289,6 @@ export default {
 }
 .keywords-list .keywords-item .link:hover{
     color: #c60023;
-}
-
-/* floor */
-.floor-wrap .floor-title{
-    height: 50px;
-    line-height: 50px;
-    color: #d58717;
-    font-weight: normal;
-    font-size: 20px;
-    border-bottom: 1px solid #d58717;
-}
-/* 更改各楼层标题颜色 */
-.floor-wrap:nth-child(2) .floor-title{
-    color: #3b838c;
-    border-bottom: 1px solid #3b838c;
-}
-.floor-wrap:nth-child(3) .floor-title{
-    color: #a93931;
-    border-bottom: 1px solid #a93931;
-}
-.floor-wrap:nth-child(4) .floor-title{
-    color: #488bad;
-    border-bottom: 1px solid #488bad;
-}
-.floor-wrap:nth-child(5) .floor-title{
-    color: #642663;
-    border-bottom: 1px solid #642663;
-}
-.floor-wrap .floor-list{
-    margin-right: -20px;
-    overflow: hidden;
-}
-.floor-wrap .floor-list .floor-item{
-    position: relative;
-    width: 200px;
-    height: 220px;
-    margin: 15px 20px 15px 0;
-    float: left;
-    cursor: pointer;
-    background: #fff;
-}
-.floor-wrap .floor-list .floor-item:hover{
-    box-shadow: 1px 1px 7px #ddd;
-}
-.floor-wrap .floor-list .floor-item .floor-text{
-    position: absolute;
-    top: 12px;
-    left: 20px;
-    font-size: 16px;
-    color: #555;
-}
-.floor-wrap .floor-list .floor-item .floor-img{
-    position: absolute;
-    right: 15px;
-    bottom: 10px;
-    width: 80%;
-    height: 75%;
-    border: none;
 }
 </style>
 
