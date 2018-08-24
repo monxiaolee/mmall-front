@@ -4,11 +4,13 @@
         <div class="floor-wrap">
             <h1 class="floor-title">F{{index+1}} {{item.title}}</h1>
             <ul class="floor-list">
-                <li class="floor-item" v-for="(list, index) in item.list" :key="index">
-                    <a href="">
-                        <span class="floor-text">{{list.title}}</span>
-                        <img class="floor-img" :src="list.img" :alt="list.title" />
-                    </a>
+                <li class="floor-item" v-for="(list, index) in item.list" :key="index"> 
+                    <router-link :to="'/productDetail/' + list.id" target = _blank>
+                        <a>
+                            <span class="floor-text">{{list.title}}</span>
+                            <img class="floor-img" :src="list.img" :alt="list.title" />
+                        </a>
+                    </router-link>
                 </li>
             </ul>
         </div>

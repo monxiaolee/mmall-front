@@ -20,19 +20,19 @@
         </div>
         <ul class="nav-list">
             <li class="nav-item">
-                <a class="link" href="./cart.html">
+                <a class="link" href="">
                     <i class="fa fa-shopping-cart"></i>
                     购物车(<span class="cart-count">0</span>)
                 </a>
             </li>
             <li class="nav-item">
-                <a class="link" href="./order-list.html">我的订单</a>
+                <a class="link" href="">我的订单</a>
             </li>
             <li class="nav-item">
-                <a class="link" href="./user-center.html">我的TEST</a>
+                <a class="link" href="">我的TEST</a>
             </li>
             <li class="nav-item">
-                <a class="link" href="./about.html">关于TEST</a>
+                <a class="link" href="">关于TEST</a>
             </li>
         </ul>
     </div>

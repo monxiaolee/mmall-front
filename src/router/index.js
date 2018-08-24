@@ -5,6 +5,7 @@ import Index from '@/views/index/Index'
 import List from '@/views/list/List'
 import login from '@/views/login/login'
 import register from '@/views/register/register'
+import productDetail from '@/views/productDetail/productDetail'
 
 Vue.use(Router)
 
@@ -29,6 +30,14 @@ export default new Router({
       path: '/list/:id',
       name: 'List',
       component: List
+    },
+    {
+      path: '/productDetail/:id',
+      name: 'productDetail',
+      component: productDetail,
+      meta: {
+        title: '商品详情'
+      }
     }
   ]
 })
