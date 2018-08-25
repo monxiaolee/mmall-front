@@ -42,7 +42,7 @@ export default {
     name: 'List',
     data() {
         return {
-
+            top_category: '' // 商品种类
         }
     },
     created() {
@@ -51,7 +51,25 @@ export default {
     methods: {
         getAllData() {
             console.log(this.$route.params)
+            if(this.$route.params.id) {
+                this.top_category = this.$route.params.id
+
+                getGoods({
+                    top_category: this.top_category
+                }).then((response) => {
+                    console.log(response)
+                    this.listData = response.data.results
+                }).catch(function(error) {
+                    console.log(error)
+                })
+            }
+
+            // this.getListData()
         }
+        // 获取产品列表
+        // getListData() {
+
+        // }
     },
     components: {
         Nav, 

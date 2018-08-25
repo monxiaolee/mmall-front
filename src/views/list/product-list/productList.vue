@@ -22,8 +22,13 @@ export default {
 
       }
   },
-  mounted() {
-
+  created() {
+      this.getAllData()
+  },
+  methods: {
+      getAllData() {
+        //   console.log(this.$route.params)
+      }
   }
 }
 </script>

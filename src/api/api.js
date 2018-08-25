@@ -4,3 +4,8 @@ import axios from "axios"
 export const queryCategorygoods = params => {
     return axios.get('/queryCategorygoods')
 }
+
+// 获取商品列表
+export const getGoods = params => {
+    return axios.get('/goods', {params: params})
+}
