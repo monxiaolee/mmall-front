@@ -32,7 +32,8 @@
                 <a class="link" href="">我的TEST</a>
             </li>
             <li class="nav-item">
-                <a class="link" href="">关于TEST</a>
+                <!-- 请求后台测试 -->
+                <a class="link" @click="test">关于TEST</a>
             </li>
         </ul>
     </div>
@@ -44,6 +45,11 @@ export default {
   data() {
       return {
 
+      }
+  },
+  methods: {
+      test() {
+          return axios.get($api.test)
       }
   }
 }
