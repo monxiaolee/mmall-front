@@ -40,6 +40,7 @@
 </div>
 </template>
 <script>
+
 export default {
   name: 'Nav',
   data() {
@@ -49,7 +50,11 @@ export default {
   },
   methods: {
       test() {
-          return axios.get($api.test)
+          return this.$http.get(this.$api.test).then(res => {
+              if(res.code == 200) {
+                  console.log('返回成功')
+              }
+          })
       }
   }
 }

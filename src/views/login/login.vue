@@ -15,15 +15,15 @@
                         <label class="user-label" for="">
                             <i class="fa fa-user"></i>
                         </label>
-                        <input class="user-content" id="username" placeholder="请输入用户名" autocomplete="off">
+                        <input class="user-content" v-model="params.userName" id="username" placeholder="请输入用户名" autocomplete="off">
                     </div>
                     <div class="user-item">
                         <label class="user-label" for="password">
                             <i class="fa fa-lock"></i>
                         </label>
-                        <input type="password" class="user-content" id="password" placeholder="请输入密码" autocomplete="off">
+                        <input type="password" class="user-content" v-model="params.passWord" id="password" placeholder="请输入密码" autocomplete="off">
                     </div>
-                    <a class="btn btn-submit" id="submit">登录</a>
+                    <a class="btn btn-submit" id="submit" @click="login">登录</a>
                     <div class="link-item">
                         <a class="link" href="./user-pass-reset.html" target="_blank">忘记密码</a>
                         <a class="link" href="./user-register.html" target="_blank">免费注册</a>
@@ -51,14 +51,29 @@ export default {
     },
     data() {
         return {
-
+            params: {
+                userName: "",
+                passWord: ""
+            }
         }
     },
     created() {
 
     },
     methods: {
-
+        login() {
+            if(this.params.userName == "" || this.params.passWord == "") {
+                console.log("用户名密码为空的逻辑处理。。。")
+            } else {
+                this.$store.dispatch("userLogin", this.params).then(res => {
+                    if(res.code == '200') {
+                        console.log("后台返回成功的逻辑。。。")
+                    } else {
+                        console.log("后台返回失败的逻辑。。。")
+                    }
+                })
+            }
+        }
     }
 }
 </script>
