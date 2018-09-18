@@ -6,7 +6,7 @@ function setAdminApi(path) {
 }
 const api = {
     test: setAdminApi('product/list.do'),
-    userLogin: setAdminApi('user/login.do')
+    userLogin: setAdminApi('user/login.do') //  /portal/user/login.do
 }
 
 // 这个接口刚开始访问不到数据，重启下服务好了
